@@ -1,0 +1,188 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* banner */
+
+.banner{
+    background-image: url("../IMG/gambar-banner-3.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-2{
+    min-height: 100vh;
+    background-image: linear-gradient(#00000084, #1919192a);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    height: 110px;
+    width: 100%;
+    background-image: linear-gradient(#000000cd, #ffffff00);
+    gap: 400px;
+}
+
+.navbar .logo{
+    margin-top: 20px;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #b9b9b972;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #0000006a;
+    letter-spacing: 5px;
+}
+
+.navbar .navbar-main{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.navbar .navbar-main a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar .navbar-main a .border-btn{
+    background-color: rgba(255, 255, 255, 0.751);
+    border-radius: 30px;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: 0.25s;
+    margin: auto;
+    display: flex;
+    margin-top: 5px;
+}
+
+.navbar .navbar-main a .active{    
+    opacity: 1 !important;
+}
+
+.navbar .navbar-main a:hover .border-btn{
+    opacity: 1;
+}
+
+.navbar .navbar-main .login a{
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #00000047;
+}
+
+.navbar .navbar-main .login a:hover{
+    background-color: #FFDD00;
+    box-shadow: 0 2px 10px #00000047;
+    color: #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* content */
+
+.banner .banner-2 .container{
+    justify-content: center;
+    height: 100%;
+    padding-top: 160px;
+}
+
+.banner .banner-2 .container .content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+    min-height: auto;
+    padding: 50px 50px;
+    background-color: #ffffff71;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #0000006e;
+    gap: 10px;
+}
+
+.banner .banner-2 .container .content .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #3B3B3B;
+}
+
+.banner .banner-2 .container .content .user svg{
+    height: 50%;
+    width: 50%;
+}
+
+.banner .banner-2 .container .content .desc{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
+.banner .banner-2 .container .content .desc .box-desc{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    background-color: #ffffff45;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #0000005c;
+}
+
+.banner .banner-2 .container .content .desc .box-desc .title{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.banner .banner-2 .container .content .desc .box-desc .desc-main{
+    text-align: justify;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+/* footer */
+
+.banner .banner-2 .footer{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    color: #F5F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
